@@ -337,7 +337,7 @@
     
     footer .right input{
         padding: 0 10px;
-        width: 250px;
+        width: 240px;
         height: 40px;
         border-radius: 6px;
         border: 0;
@@ -374,4 +374,79 @@
     footer .right span {
         color: var(--Red);
         font-size: 10px;
+    }
+    
+    @media (max-width: 540px){
+        .grow .grow-container{
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+    
+        .grow .grow-container h3{
+            margin-top: 40px;
+        }
+    
+        .grow .grow-container p{
+            margin-top: 40px;
+        }
+    
+        .flowing{
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .flowing h3{
+            margin-top: 40px;
+        }
+    
+        .flowing p{
+            margin-top: 40px;
+        }
+    
+        .user .user-container {
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+    
+        .user .user-container h3{
+            margin-top: 40px;
+        }
+    
+        .user .user-container p{
+            margin-top: 40px;
+        }
+    
+        footer .footer-container{
+            flex-direction: column-reverse;
+        }
+    
+        footer .footer-container .right,
+        footer .footer-container .left{
+            width: 350px;
+        }
+    
+        footer .right button{
+            display: block;
+            margin: 10px 160px;
+    
+        }
+    
+        footer .right span{
+            display: none;
+        }
+    
+        footer .footer-container .left .f-logo{
+            margin: 50px 0 10px 0;
+        }
+    
+        footer .footer-container .left .social {
+            margin: 30px 0;
+        }
+    
+        .build h1{font-size: 25px; text-align: center;}
+        .ready h3,.user .user-container h3,.flowing h3,.grow .grow-container h3{font-size: 25px; text-align: center;}
+        .numbers .numbers-text h2 {font-size: 30px; text-align: center;} 
+        .build img,.grow-img img,.flowing img,.user-img img{width: 300px; text-align: center;}
+        .build p,.grow .grow-container p,.flowing p,.user .user-container p{text-align: center;width: 290px;}
+    
     }
